@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.home {
+    width: 100%;
+    height: 613px;
+    display: flex;
+    justify-content: center;
+    background: url(../img/bg-hero.png);
+    background-size:cover;
+}
+
+.home__hero {
+    text-align: center;
+    font-size: 2rem; 
+}
+
+.home__hero .logo {
+    margin: 74px auto;
+}
+
+.home__hero h1 {
+    color: white;
+    width: 550px;
+    font-weight: 600;
+    margin-bottom: 61px;
+}
+
+.home__hero .btn-action {
+    text-decoration: none;
+    padding: 8px 64px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #383838;
+    background:white;
+    width: 245px;
+    height: 51px;
+    box-shadow: 0 2px 6px rgba($color: #000000, $alpha: 0.3);
+    &:hover {
+        background: #f4f4f4;
+        transition: 0.5s;
+    }
+}
+
+/* ============ SECTION CATEGORIES ============*/
+.title {
+    font-size: 3.25rem;
+    font-weight: 600;
+}
+
+.categories {
+    width: 90%;
+    margin: 2rem auto 6rem  auto;
+    .description {
+        font-weight: 600;
+        color: white;
+    }
+}
+
+.categories p {
+    margin-bottom: 2rem;
+}
+
+.categories h3 {
+    color: white;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    gap: 10px;
+}
+
+.box {
+    height: 346px;
+    padding: 10px 20px;
+}
+
+.grid-wrapper .box.a {
+    background: url(../img/nature.png);
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    cursor: pointer;
+}
+
+.grid-wrapper .box.b {
+    background: url(../img/daily.png);
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    cursor: pointer;
+}
+.grid-wrapper .box.c {
+    background: url(../img/together.png);
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.grid-wrapper .box.d {
+    background: url(../img/analysis.png);
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.grid-wrapper .box.e {
+    background: url(../img/pictures.png);
+    background-size: cover;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+/* ============ SECTION PLANS ============*/
+
+.plans {
+    width: 100%;
+    height: 600px;
+    background: #f4f4f4;
+}
+
+.plans__title {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 93px;
+}
+.cards-plans {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.card-1, .card-2, .card-3,
+.card-4, .card-5, .card-6 {
+    background: #0088ed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-6 {
+    height: 425px;
+}
+
+.card-5 {
+    height: 375px;
+}
+
+.card-4 {
+    height: 325px;
+}
+
+.card-3 {
+    height: 275px;
+}
+
+.card-2 {
+    height: 225px;
+}
+
+.card-1 {
+    height: 175px;
+}
+
+.plan-description {
+    padding: 18px;
+    font-size: 12px;
+}
+
+.card-value {
+    background: #005499;
+    color: white;
+    padding: 18px;
+    .value {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
